@@ -23,12 +23,11 @@ src/
 │
 ├── components/        # Componentes modulares reutilizables
 │   ├── Navbar.astro
-│   ├── SeccionComercializadora.astro
 │   ├── Contacto.astro
 │   └── ...
 │
 ├── layouts/           # Plantilla base HTML
-│   ├── BaseLayout.astro
+│   ├── Layout.astro
 │   └── ...
 │
 ├── pages/             # Rutas del sitio
