@@ -1,0 +1,186 @@
+---
+// src/pages/proyectos.astro
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Proyectos | EMLI">
+    <Navbar />
+
+    <div class="w-full bg-white relative z-10">
+        <!-- HEADER PROYECTOS -->
+        <section class="relative h-[60vh] sm:h-[70vh] md:h-[60vh] sm:h-[70vh] md:h-[85vh] lg:h-[60vh] sm:h-[70vh] md:h-[85vh] lg:h-[95vh] min-h-[450px] lg:min-h-[450px] lg:min-h-[500px] flex items-center justify-center md:justify-start bg-zinc-900">
+            <img 
+                src="/public/servicios-header.jpg" 
+                class="absolute inset-0 w-full h-full object-cover" 
+                alt="Proyectos EMLI"
+            >
+            <div class="absolute inset-0 bg-[#1f4c95]/70 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1f4c95] via-transparent "></div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-4 sm:px-6 w-full text-center md:text-left mt-16">
+                <span class="text-xs font-bold text-gray-300 uppercase tracking-widest mb-2 block">Portafolio</span>
+                <h1 class="text-3xl sm:text-4xl md:text-4xl sm:text-5xl md:text-3xl sm:text-4xl md:text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:text-4xl sm:text-5xl md:text-3xl sm:text-4xl md:text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:text-7xl font-black text-white uppercase mb-4 sm:mb-4 sm:mb-4 sm:mb-5 lg:mb-5 sm:mb-5 sm:mb-6 leading-tight">
+                    Expertise que <span class="text-[#a3e635]">se nota.</span>
+                </h1>
+                <p class="text-lg md:text-xl sm:text-2xl text-gray-100 max-w-2xl mx-auto md:mx-0 font-light">
+                    Soluciones llave en mano ejecutadas con precisión, normativa y seguridad.
+                </p>
+            </div>
+        </section>
+    <!-- SECCIÓN PROYECTOS -->
+<section class="bg-white py-12 sm:py-16 md:py-12 sm:py-16 md:py-16 sm:py-18 md:py-20 lg:py-12 sm:py-16 md:py-16 sm:py-18 md:py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-4 sm:px-6">
+        
+        <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-12 sm:mb-14 lg:mb-12 sm:mb-14 lg:mb-16">
+            <button class="px-4 sm:px-4 sm:px-6 py-2 bg-[#1F4C95] text-white font-titillium font-bold text-sm uppercase tracking-wider rounded-sm">Todos</button>
+            <button class="px-4 sm:px-4 sm:px-6 py-2 bg-slate-100 text-slate-600 hover:bg-slate-200 transition font-titillium font-bold text-sm uppercase tracking-wider rounded-sm">Media Tensión</button>
+            <button class="px-4 sm:px-4 sm:px-6 py-2 bg-slate-100 text-slate-600 hover:bg-slate-200 transition font-titillium font-bold text-sm uppercase tracking-wider rounded-sm">Iluminación</button>
+            <button class="px-4 sm:px-4 sm:px-6 py-2 bg-slate-100 text-slate-600 hover:bg-slate-200 transition font-titillium font-bold text-sm uppercase tracking-wider rounded-sm">Industrial</button>
+        </div>
+        <!-- Proyectos Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 lg:gap-6 sm:gap-7 lg:gap-8">
+            
+            <div class="group relative overflow-hidden bg-white shadow-xl rounded-lg hover:-translate-y-1 transition-all duration-300 md:h-[550px] flex flex-col border border-gray-50">
+                <div class="h-48 sm:h-52 md:h-48 sm:h-52 md:h-56 overflow-hidden relative">
+                    <img src="/public/sistema-servicios.webp" alt="GILSA Cumbres" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-[#CEEA4D] text-[#1F4C95] text-[10px] font-black px-2.5 sm:px-3 py-1 uppercase rounded-sm z-20">Finalizado</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow relative">
+                    <span class="absolute top-4 left-8 text-[#1F4C95] font-bold font-titillium text-xs tracking-widest"></span>
+                    <h3 class="text-lg sm:text-lg sm:text-xl font-titillium font-semibold text-[#1F4C95] mb-2 mt-4">GILSA Cumbres</h3>
+                    <div class="flex items-center gap-2 mb-4 sm:mb-4 sm:mb-4 sm:mb-5 lg:mb-5 sm:mb-5 sm:mb-6">
+                        <svg width="14" height="18" viewBox="0 0 18 22" fill="none"><path d="M9 0C4.03 0 0 4.03 0 9C0 15.75 9 22 9 22C9 22 18 15.75 18 9C18 4.03 13.97 0 9 0ZM9 12.25C7.205 12.25 5.75 10.795 5.75 9C5.75 7.205 7.205 5.75 9 5.75C10.795 5.75 12.25 7.205 12.25 9C12.25 10.795 10.795 12.25 9 12.25Z" fill="#B21508"/></svg>
+                        <span class="text-[10px] sm:text-[11px] font-titillium font-bold text-gray-400 uppercase tracking-widest">Monterrey, N.L.</span>
+                    </div>
+                    <p class="font-titillium text-[#343233] text-sm sm:text-base leading-relaxed mb-5 sm:mb-5 sm:mb-6 flex-grow">Proyecto integral de acometida, media tensión y distribución de fuerza para sistemas HVAC en nueva sucursal.</p>
+                    <div class="flex justify-start mt-auto">
+                        <a href="#" class="group/btn flex items-stretch gap-[2px] h-9 sm:h-9 sm:h-10">
+                            <div class="bg-[#B21508] text-white text-[10px] sm:text-[11px] font-titillium font-bold uppercase tracking-widest px-4 sm:px-4 sm:px-6 flex items-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-l-md">Ver Detalles</div>
+                            <div class="bg-[#B21508] text-white px-2.5 sm:px-3 flex items-center justify-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-r-md"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7l5 5-5 5" class="opacity-50"></path><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5"></path></svg></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    <!-- Proyecto 2 -->
+            <div class="group relative overflow-hidden bg-white shadow-xl rounded-lg hover:-translate-y-1 transition-all duration-300 md:h-[550px] flex flex-col border border-gray-50">
+                <div class="h-48 sm:h-52 md:h-48 sm:h-52 md:h-56 overflow-hidden relative">
+                    <img src="/public/sistema-servicios.webp" alt="MO05 Park Lincoln" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-[#CEEA4D] text-[#1F4C95] text-[10px] font-black px-2.5 sm:px-3 py-1 uppercase rounded-sm z-20">Finalizado</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow relative">
+                    <span class="absolute top-4 left-8 text-[#1F4C95] font-bold font-titillium text-xs tracking-widest"></span>
+                    <h3 class="text-lg sm:text-lg sm:text-xl font-titillium font-semibold text-[#1F4C95] mb-2 mt-4">MO05 Park Lincoln</h3>
+                    <div class="flex items-center gap-2 mb-4 sm:mb-4 sm:mb-4 sm:mb-5 lg:mb-5 sm:mb-5 sm:mb-6">
+                        <svg width="14" height="18" viewBox="0 0 18 22" fill="none"><path d="M9 0C4.03 0 0 4.03 0 9C0 15.75 9 22 9 22C9 22 18 15.75 18 9C18 4.03 13.97 0 9 0ZM9 12.25C7.205 12.25 5.75 10.795 5.75 9C5.75 7.205 7.205 5.75 9 5.75C10.795 5.75 12.25 7.205 12.25 9C12.25 10.795 10.795 12.25 9 12.25Z" fill="#B21508"/></svg>
+                        <span class="text-[10px] sm:text-[11px] font-titillium font-bold text-gray-400 uppercase tracking-widest">García, N.L.</span>
+                    </div>
+                    <p class="font-titillium text-[#343233] text-sm sm:text-base leading-relaxed mb-5 sm:mb-5 sm:mb-6 flex-grow">Suministro e instalación de baja y media tensión, receptáculos de oficina y alumbrado exterior.</p>
+                    <div class="flex justify-start mt-auto">
+                        <a href="#" class="group/btn flex items-stretch gap-[2px] h-9 sm:h-9 sm:h-10">
+                            <div class="bg-[#B21508] text-white text-[10px] sm:text-[11px] font-titillium font-bold uppercase tracking-widest px-4 sm:px-4 sm:px-6 flex items-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-l-md">Ver Detalles</div>
+                            <div class="bg-[#B21508] text-white px-2.5 sm:px-3 flex items-center justify-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-r-md"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7l5 5-5 5" class="opacity-50"></path><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5"></path></svg></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!-- Proyecto 3 -->
+            <div class="group relative overflow-hidden bg-white shadow-xl rounded-lg hover:-translate-y-1 transition-all duration-300 md:h-[550px] flex flex-col border border-gray-50">
+                <div class="h-48 sm:h-52 md:h-48 sm:h-52 md:h-56 overflow-hidden relative">
+                    <img src="/public/sistema-servicios.webp" alt="TEREX" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-[#1F4C95] text-white text-[10px] font-black px-2.5 sm:px-3 py-1 uppercase rounded-sm z-20">En Proceso</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow relative">
+                    <span class="absolute top-4 left-8 text-[#1F4C95] font-bold font-titillium text-xs tracking-widest"></span>
+                    <h3 class="text-lg sm:text-lg sm:text-xl font-titillium font-semibold text-[#1F4C95] mb-2 mt-4">Nave Industrial TEREX</h3>
+                    <div class="flex items-center gap-2 mb-4 sm:mb-4 sm:mb-4 sm:mb-5 lg:mb-5 sm:mb-5 sm:mb-6">
+                        <svg width="14" height="18" viewBox="0 0 18 22" fill="none"><path d="M9 0C4.03 0 0 4.03 0 9C0 15.75 9 22 9 22C9 22 18 15.75 18 9C18 4.03 13.97 0 9 0ZM9 12.25C7.205 12.25 5.75 10.795 5.75 9C5.75 7.205 7.205 5.75 9 5.75C10.795 5.75 12.25 7.205 12.25 9C12.25 10.795 10.795 12.25 9 12.25Z" fill="#B21508"/></svg>
+                        <span class="text-[10px] sm:text-[11px] font-titillium font-bold text-gray-400 uppercase tracking-widest">Escobedo, N.L.</span>
+                    </div>
+                    <p class="font-titillium text-[#343233] text-sm sm:text-base leading-relaxed mb-5 sm:mb-5 sm:mb-6 flex-grow">Retrofit completo de iluminación LED High-Bay para nave de producción de 5,000 m².</p>
+                    <div class="flex justify-start mt-auto">
+                        <a href="#" class="group/btn flex items-stretch gap-[2px] h-9 sm:h-9 sm:h-10">
+                            <div class="bg-[#B21508] text-white text-[10px] sm:text-[11px] font-titillium font-bold uppercase tracking-widest px-4 sm:px-4 sm:px-6 flex items-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-l-md">Ver Detalles</div>
+                            <div class="bg-[#B21508] text-white px-2.5 sm:px-3 flex items-center justify-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-r-md"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7l5 5-5 5" class="opacity-50"></path><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5"></path></svg></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!-- Proyecto 4 -->
+            <div class="group relative overflow-hidden bg-white shadow-xl rounded-lg hover:-translate-y-1 transition-all duration-300 md:h-[550px] flex flex-col border border-gray-50">
+                <div class="h-48 sm:h-52 md:h-48 sm:h-52 md:h-56 overflow-hidden relative">
+                    <img src="/public/sistema-servicios.webp" alt="Subestación" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-[#CEEA4D] text-[#1F4C95] text-[10px] font-black px-2.5 sm:px-3 py-1 uppercase rounded-sm z-20">Finalizado</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow relative">
+                    <span class="absolute top-4 left-8 text-[#1F4C95] font-bold font-titillium text-xs tracking-widest"></span>
+                    <h3 class="text-lg sm:text-lg sm:text-xl font-titillium font-semibold text-[#1F4C95] mb-2 mt-4">Subestación Planta 2</h3>
+                    <div class="flex items-center gap-2 mb-4 sm:mb-4 sm:mb-4 sm:mb-5 lg:mb-5 sm:mb-5 sm:mb-6">
+                        <svg width="14" height="18" viewBox="0 0 18 22" fill="none"><path d="M9 0C4.03 0 0 4.03 0 9C0 15.75 9 22 9 22C9 22 18 15.75 18 9C18 4.03 13.97 0 9 0ZM9 12.25C7.205 12.25 5.75 10.795 5.75 9C5.75 7.205 7.205 5.75 9 5.75C10.795 5.75 12.25 7.205 12.25 9C12.25 10.795 10.795 12.25 9 12.25Z" fill="#B21508"/></svg>
+                        <span class="text-[10px] sm:text-[11px] font-titillium font-bold text-gray-400 uppercase tracking-widest">Apodaca, N.L.</span>
+                    </div>
+                    <p class="font-titillium text-[#343233] text-sm sm:text-base leading-relaxed mb-5 sm:mb-5 sm:mb-6 flex-grow">Mantenimiento mayor a subestación de 1500 kVA, pruebas de VLF y análisis de aceite dieléctrico.</p>
+                    <div class="flex justify-start mt-auto">
+                        <a href="#" class="group/btn flex items-stretch gap-[2px] h-9 sm:h-9 sm:h-10">
+                            <div class="bg-[#B21508] text-white text-[10px] sm:text-[11px] font-titillium font-bold uppercase tracking-widest px-4 sm:px-4 sm:px-6 flex items-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-l-md">Ver Detalles</div>
+                            <div class="bg-[#B21508] text-white px-2.5 sm:px-3 flex items-center justify-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-r-md"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7l5 5-5 5" class="opacity-50"></path><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5"></path></svg></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!-- Proyecto 5 -->
+            <div class="group relative overflow-hidden bg-white shadow-xl rounded-lg hover:-translate-y-1 transition-all duration-300 md:h-[550px] flex flex-col border border-gray-50">
+                <div class="h-48 sm:h-52 md:h-48 sm:h-52 md:h-56 overflow-hidden relative">
+                    <img src="/public/sistema-servicios.webp" alt="Oficinas" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-[#CEEA4D] text-[#1F4C95] text-[10px] font-black px-2.5 sm:px-3 py-1 uppercase rounded-sm z-20">Finalizado</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow relative">
+                    <span class="absolute top-4 left-8 text-[#1F4C95] font-bold font-titillium text-xs tracking-widest"></span>
+                    <h3 class="text-lg sm:text-lg sm:text-xl font-titillium font-semibold text-[#1F4C95] mb-2 mt-4">Oficinas Corporativas</h3>
+                    <div class="flex items-center gap-2 mb-4 sm:mb-4 sm:mb-4 sm:mb-5 lg:mb-5 sm:mb-5 sm:mb-6">
+                        <svg width="14" height="18" viewBox="0 0 18 22" fill="none"><path d="M9 0C4.03 0 0 4.03 0 9C0 15.75 9 22 9 22C9 22 18 15.75 18 9C18 4.03 13.97 0 9 0ZM9 12.25C7.205 12.25 5.75 10.795 5.75 9C5.75 7.205 7.205 5.75 9 5.75C10.795 5.75 12.25 7.205 12.25 9C12.25 10.795 10.795 12.25 9 12.25Z" fill="#B21508"/></svg>
+                        <span class="text-[10px] sm:text-[11px] font-titillium font-bold text-gray-400 uppercase tracking-widest">San Pedro, N.L.</span>
+                    </div>
+                    <p class="font-titillium text-[#343233] text-sm sm:text-base leading-relaxed mb-5 sm:mb-5 sm:mb-6 flex-grow">Instalación eléctrica de baja tensión, site de cómputo y sistema de tierras para edificio corporativo.</p>
+                    <div class="flex justify-start mt-auto">
+                        <a href="#" class="group/btn flex items-stretch gap-[2px] h-9 sm:h-9 sm:h-10">
+                            <div class="bg-[#B21508] text-white text-[10px] sm:text-[11px] font-titillium font-bold uppercase tracking-widest px-4 sm:px-4 sm:px-6 flex items-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-l-md">Ver Detalles</div>
+                            <div class="bg-[#B21508] text-white px-2.5 sm:px-3 flex items-center justify-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-r-md"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7l5 5-5 5" class="opacity-50"></path><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5"></path></svg></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!-- Proyecto 6 -->
+            <div class="group relative overflow-hidden bg-white shadow-xl rounded-lg hover:-translate-y-1 transition-all duration-300 md:h-[550px] flex flex-col border border-gray-50">
+                <div class="h-48 sm:h-52 md:h-48 sm:h-52 md:h-56 overflow-hidden relative">
+                    <img src="/public/sistema-servicios.webp" alt="Fotovoltaico" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-[#CEEA4D] text-[#1F4C95] text-[10px] font-black px-2.5 sm:px-3 py-1 uppercase rounded-sm z-20">Finalizado</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow relative">
+                    <span class="absolute top-4 left-8 text-[#1F4C95] font-bold font-titillium text-xs tracking-widest"></span>
+                    <h3 class="text-lg sm:text-lg sm:text-xl font-titillium font-semibold text-[#1F4C95] mb-2 mt-4">Sistema Fotovoltaico</h3>
+                    <div class="flex items-center gap-2 mb-4 sm:mb-4 sm:mb-4 sm:mb-5 lg:mb-5 sm:mb-5 sm:mb-6">
+                        <svg width="14" height="18" viewBox="0 0 18 22" fill="none"><path d="M9 0C4.03 0 0 4.03 0 9C0 15.75 9 22 9 22C9 22 18 15.75 18 9C18 4.03 13.97 0 9 0ZM9 12.25C7.205 12.25 5.75 10.795 5.75 9C5.75 7.205 7.205 5.75 9 5.75C10.795 5.75 12.25 7.205 12.25 9C12.25 10.795 10.795 12.25 9 12.25Z" fill="#B21508"/></svg>
+                        <span class="text-[10px] sm:text-[11px] font-titillium font-bold text-gray-400 uppercase tracking-widest">Santa Catarina, N.L.</span>
+                    </div>
+                    <p class="font-titillium text-[#343233] text-sm sm:text-base leading-relaxed mb-5 sm:mb-5 sm:mb-6 flex-grow">Instalación de 500 paneles solares en techo de nave industrial e interconexión a media tensión.</p>
+                    <div class="flex justify-start mt-auto">
+                        <a href="#" class="group/btn flex items-stretch gap-[2px] h-9 sm:h-9 sm:h-10">
+                            <div class="bg-[#B21508] text-white text-[10px] sm:text-[11px] font-titillium font-bold uppercase tracking-widest px-4 sm:px-4 sm:px-6 flex items-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-l-md">Ver Detalles</div>
+                            <div class="bg-[#B21508] text-white px-2.5 sm:px-3 flex items-center justify-center group-hover/btn:bg-[#8f1106] transition duration-300 rounded-r-md"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7l5 5-5 5" class="opacity-50"></path><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5-5 5"></path></svg></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <Contact />
+        <Footer />
+        
+    </div>
+</Layout>

@@ -1,0 +1,61 @@
+---
+// src/layouts/Layout.astro
+import '../styles/global.css';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="EMLI - Soluciones Eléctricas Industriales" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{title} | EMLI</title>
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body class="bg-white text-slate-900 font-['Titillium_Web',sans-serif] antialiased">
+        <slot />
+    </body>
+</html>
+
+<style is:global>
+    /* ============================================
+       COLORES EMLI
+       ============================================ */
+    .text-emli-lime { 
+        color: #a3e635; 
+    }
+    .bg-emli-lime { 
+        background-color: #a3e635; 
+    }
+    .bg-emli-blue { 
+        background-color: #1e3a8a; 
+    }
+    .text-emli-blue { 
+        color: #1e3a8a; 
+    }
+    .bg-emli-red { 
+        background-color: #dc2626; 
+    }
+
+    /* ============================================
+       FUENTES
+       ============================================ */
+    .font-rubik { 
+        font-family: 'Rubik', sans-serif; 
+    }
+    .font-titillium { 
+        font-family: 'Titillium Web', sans-serif; 
+    }
+</style>

@@ -1,0 +1,194 @@
+---
+// src/pages/proceso.astro
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Proceso | EMLI">
+    <Navbar />
+        <!--PROCESO DE PROYECTOS-->
+    <section class="bg-[#1F4C95] pt-32 sm:pt-40 md:pt-48 lg:pt-56 pb-48 sm:pb-60 md:pb-72 lg:pb-80 relative w-full overflow-hidden text-white z-20">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+            
+            <!-- Título principal -->
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-none mb-8 sm:mb-10 lg:mb-12 font-rubik tracking-tight text-center md:text-left">
+                PROCESO <span class="text-[#CEEA4D]">DE PROYECTOS</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
+                
+                <!-- Descripción del proceso -->
+                <div class="text-center md:text-left md:pl-12 lg:pl-20 xl:pl-24 mt-4 sm:mt-6 lg:mt-8">
+                    <p class="text-lg sm:text-xl md:text-2xl text-[#CEEA4D] font-semibold mb-6 sm:mb-7 lg:mb-8 leading-snug font-titillium">
+                        Nuestro proceso está diseñado para que un proyecto eléctrico industrial avance con claridad y control desde el primer día.
+                    </p>
+                    <p class="text-white text-sm sm:text-base md:text-lg leading-relaxed font-light font-titillium">
+                        Definimos el alcance con un diagnóstico técnico, lo aterrizamos en un proyecto ejecutivo listo para obra y trámites, gestionamos la parte regulatoria con CFE y ejecutamos con cuadrillas especializadas. Cerramos con pruebas, puesta en marcha y un dossier de entrega que deja todo documentado para operación, auditorías y futuros crecimientos.
+                    </p>
+                </div>
+                
+                <!-- Diagrama del proceso -->
+    <div 
+        class="flex justify-center md:justify-end relative min-h-[200px] sm:min-h-[300px] items-center px-4 sm:px-0"
+        style="-webkit-mask-image: radial-gradient(circle, black 20%, transparent 105%); mask-image: radial-gradient(circle, black 20%, transparent 105%);"
+        >
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 w-[60%] h-[60%] bg-black/50 blur-[80px] sm:blur-[100px] rounded-full pointer-events-none"></div>
+    <img
+        src="/public/diagrama-proceso.svg"
+        alt="Diagrama de Proceso EMLI"
+        class="relative z-10 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[1500px] h-auto object-contain transition duration-500"
+        style="filter: drop-shadow(0 0 0 transparent);">
+    </div>
+            </div>
+        </div>
+        <!-- Onda decorativa inferior -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-0">
+            <svg class="relative block w-[calc(100%+1.3px)] h-[40px] sm:h-[80px] md:h-[120px] lg:h-[180px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 0V120h1200z" class="fill-white"></path>
+            </svg>
+        </div>
+
+    </section>
+
+    <!-- TARJETA DESTACADA - DIAGNÓSTICO -->
+    <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 relative z-30 -mt-24 sm:-mt-32 md:-mt-40 lg:-mt-48 xl:-mt-64">
+        
+        <div class="bg-white rounded-xl shadow-2xl flex flex-col md:flex-row hover:-translate-y-2 transition duration-500 h-auto md:h-[400px] lg:h-[480px] overflow-hidden">
+            
+            <div class="md:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+                <span class="absolute top-6 sm:top-8 left-6 sm:left-8 text-[#1F4C95] font-bold font-titillium text-xs sm:text-sm tracking-widest">01</span>
+                
+                <h3 class="font-titillium font-semibold text-2xl sm:text-3xl text-[#1F4C95] mb-4 sm:mb-6 pt-4">
+                    Diagnóstico
+                </h3>
+                
+                <p class="font-titillium text-[#343233] text-base sm:text-lg md:text-xl leading-relaxed">
+                    Levantamiento en sitio, revisión de cargas, estado de tableros/subestaciones para definir riesgos, oportunidades y premisas de diseño.
+                </p>
+            </div>
+
+            <!-- Imagen -->
+            <div class="md:w-1/2 h-48 sm:h-64 md:h-auto relative overflow-hidden md:rounded-r-xl">
+                <img 
+                    src="/public/diagnostico-proceso.webp" 
+                    class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 md:rounded-r-xl"
+                    alt="Diagnóstico EMLI"
+                >
+            </div>
+        </div>
+    </div>
+
+    <!-- PASOS DEL PROCESO -->
+    <section class="bg-white pt-8 sm:pt-10 lg:pt-12 pb-16 sm:pb-20 w-full">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-8 sm:space-y-10 lg:space-y-12"> 
+            
+            <!-- 02 - Proyecto ejecutivo -->
+            <div class="bg-white rounded-xl shadow-xl flex flex-col md:flex-row hover:-translate-y-2 transition duration-500 h-auto md:h-[400px] lg:h-[480px] overflow-hidden">
+                <div class="md:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+                    <span class="absolute top-6 sm:top-8 left-6 sm:left-8 text-[#1F4C95] font-bold font-titillium text-xs sm:text-sm tracking-widest">02</span>
+                    <h3 class="font-titillium font-semibold text-2xl sm:text-3xl text-[#1F4C95] mb-4 sm:mb-6 pt-4">
+                        Proyecto ejecutivo
+                    </h3>
+                    <p class="font-titillium text-[#343233] text-base sm:text-lg md:text-xl leading-relaxed">
+                        Memoria de cálculo, diagramas unifilares, cuadros de carga y planos constructivos "as-built". Se especifican equipos, calibres y protecciones para compras y obra.
+                    </p>
+                </div>
+                <div class="md:w-1/2 h-48 sm:h-64 md:h-auto relative overflow-hidden md:rounded-r-xl">
+                    <img 
+                        src="/public/proyecto-proceso.webp" 
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 md:rounded-r-xl"
+                        alt="Proyecto ejecutivo EMLI"
+                    >
+                </div>
+            </div>
+
+            <!-- 03 - Factibilidad y Trámites -->
+            <div class="bg-white rounded-xl shadow-xl flex flex-col md:flex-row hover:-translate-y-2 transition duration-500 h-auto md:h-[400px] lg:h-[480px] overflow-hidden">
+                <div class="md:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+                    <span class="absolute top-6 sm:top-8 left-6 sm:left-8 text-[#1F4C95] font-bold font-titillium text-xs sm:text-sm tracking-widest">03</span>
+                    <h3 class="font-titillium font-semibold text-2xl sm:text-3xl text-[#1F4C95] mb-4 sm:mb-6 pt-4">
+                        Factibilidad y Trámites con CFE
+                    </h3>
+                    <p class="font-titillium text-[#343233] text-base sm:text-lg md:text-xl leading-relaxed">
+                        Acompañamiento en factibilidad, contratos, presupuestos de obra, medidores y puntos de entrega, hasta la liberación correspondiente.
+                    </p>
+                </div>
+                <div class="md:w-1/2 h-48 sm:h-64 md:h-auto relative overflow-hidden md:rounded-r-xl">
+                    <img 
+                        src="/public/comercializadora-index.webp" 
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 md:rounded-r-xl"
+                        alt="Factibilidad EMLI"
+                    >
+                </div>
+            </div>
+
+            <!-- 04 - Suministro y ejecución -->
+            <div class="bg-white rounded-xl shadow-xl flex flex-col md:flex-row hover:-translate-y-2 transition duration-500 h-auto md:h-[400px] lg:h-[480px] overflow-hidden">
+                <div class="md:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+                    <span class="absolute top-6 sm:top-8 left-6 sm:left-8 text-[#1F4C95] font-bold font-titillium text-xs sm:text-sm tracking-widest">04</span>
+                    <h3 class="font-titillium font-semibold text-2xl sm:text-3xl text-[#1F4C95] mb-4 sm:mb-6 pt-4">
+                        Suministro y ejecución
+                    </h3>
+                    <p class="font-titillium text-[#343233] text-base sm:text-lg md:text-xl leading-relaxed">
+                        Suministro de equipo y materiales; montaje de subestación/centros de carga, canalizaciones, cableado, tableros, luminarias y soportería a la medida.
+                    </p>
+                </div>
+                <div class="md:w-1/2 h-48 sm:h-64 md:h-auto relative overflow-hidden md:rounded-r-xl">
+                    <img 
+                        src="/public/suministro-proceso.jpg" 
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 md:rounded-r-xl"
+                        alt="Suministro EMLI"
+                    >
+                </div>
+            </div>
+
+            <!-- 05 - Pruebas y puesta en marcha -->
+            <div class="bg-white rounded-xl shadow-xl flex flex-col md:flex-row hover:-translate-y-2 transition duration-500 h-auto md:h-[400px] lg:h-[480px] overflow-hidden">
+                <div class="md:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+                    <span class="absolute top-6 sm:top-8 left-6 sm:left-8 text-[#1F4C95] font-bold font-titillium text-xs sm:text-sm tracking-widest">05</span>
+                    <h3 class="font-titillium font-semibold text-2xl sm:text-3xl text-[#1F4C95] mb-4 sm:mb-6 pt-4">
+                        Pruebas y puesta en marcha
+                    </h3>
+                    <p class="font-titillium text-[#343233] text-base sm:text-lg md:text-xl leading-relaxed">
+                        Pruebas de aislamiento, relación de transformación, protocolos de arranque y balanceo de cargas; checklist de seguridad y continuidad.
+                    </p>
+                </div>
+                <div class="md:w-1/2 h-48 sm:h-64 md:h-auto relative overflow-hidden md:rounded-r-xl">
+                    <img 
+                        src="/public/pruebas-proceso.webp" 
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 md:rounded-r-xl"
+                        alt="Pruebas EMLI"
+                    >
+                </div>
+            </div>
+
+            <!-- 06 - Verificación y cierre -->
+            <div class="bg-white rounded-xl shadow-xl flex flex-col md:flex-row hover:-translate-y-2 transition duration-500 h-auto md:h-[400px] lg:h-[480px] overflow-hidden">
+                <div class="md:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+                    <span class="absolute top-6 sm:top-8 left-6 sm:left-8 text-[#1F4C95] font-bold font-titillium text-xs sm:text-sm tracking-widest">06</span>
+                    <h3 class="font-titillium font-semibold text-2xl sm:text-3xl text-[#1F4C95] mb-4 sm:mb-6 pt-4">
+                        Verificación y cierre
+                    </h3>
+                    <p class="font-titillium text-[#343233] text-base sm:text-lg md:text-xl leading-relaxed">
+                        Entrega de dossier (planos finales, memorias, fichas y garantías), capacitación básica al personal.
+                    </p>
+                </div>
+                <div class="md:w-1/2 h-48 sm:h-64 md:h-auto relative overflow-hidden md:rounded-r-xl">
+                    <img 
+                        src="/public/verificacion-proceso.jpg" 
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 md:rounded-r-xl"
+                        alt="Verificación EMLI"
+                    >
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <Contact />
+    <Footer />
+</Layout>

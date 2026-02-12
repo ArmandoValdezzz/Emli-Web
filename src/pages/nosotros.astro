@@ -1,0 +1,279 @@
+---
+// src/pages/nosotros.astro
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Nosotros | EMLI">
+    <Navbar />
+    <!----HERO SECTION---->
+    <div class="w-full bg-white relative z-10">
+        <div class="w-full relative overflow-x-hidden max-w-[100vw]">
+            
+            <div class="relative w-full h-[100dvh] min-h-[600px] bg-[#1F4C95] overflow-hidden">
+                
+                <div class="absolute inset-0 z-0 blur-[1px] scale-110 transform transition-transform opacity-70">
+                    <img 
+                        src="/public/banner-nosotros.webp" 
+                        class="w-full h-full object-cover object-center" 
+                        alt="Equipo EMLI trabajando en altura"
+                    >
+                </div>
+
+                <div class="absolute inset-0 z-10 bg-[#1F4C95]/50 mix-blend-multiply"></div>
+                <div class="absolute inset-0 z-10 bg-gradient-to-tr from-[#1F4C95]/40 via-transparent to-white/10 pointer-events-none"></div>
+                
+                <div class="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-b from-transparent via-[#1F4C95]/40 to-[#1F4C95] z-20 pointer-events-none"></div>
+
+                <div class="relative z-30 h-full flex flex-col justify-end items-start max-w-7xl mx-auto px-6 md:px-9 pb-24 sm:pb-32 md:pb-40 text-left">
+                    <span class="font-titillium text-xs sm:text-sm text-gray-200 uppercase tracking-[0.1em] mb-4 block pl-1 drop-shadow-md">
+                        Nosotros
+                    </span>
+                    <h1 class="font-rubik font-bold text-4xl sm:text-4xl md:text-5xl lg:text-[70px] leading-[1.1] text-white uppercase mb-6 drop-shadow-2xl tracking-tight text-left">
+                        EXPERTOS EN 
+                        <span class="text-[#CEEA4D]">INSTALACIONES ELÉCTRICAS</span> 
+                        <span class="text-[#CEEA4D]">Y SUBESTACIONES</span>
+                    </h1>
+                    <p class="font-titillium text-base sm:text-lg md:text-2xl text-white font-normal tracking-wide drop-shadow-md pl-1 max-w-2xl">
+                        Ingeniería, CFE y ejecución.
+                    </p>
+                    
+                    <div class="absolute bottom-8 md:bottom-27 left-1/2 -translate-x-1/2 flex items-center justify-center gap-2 z-30 pointer-events-none">
+                        <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-7 7-7-7" class="text-white/50 opacity-50"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 15l-7 7-7-7"></path>
+                        </svg>
+                        <span class="font-titillium text-[13px] md:text-[13px] text-white uppercase tracking-[0.2em]">
+                            Explorar
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----SECCIÓN NOSOTROS COMPLETA---->
+    <section class="bg-[#1F4C95] pt-20 pb-40 md:pb-90 relative w-full overflow-hidden text-white z-20">
+    
+        <div class="absolute top-0 right-0 w-2/3 h-full bg-gradient-to-l to-transparent pointer-events-none opacity-30"></div>
+
+        <div class="w-full max-w-7xl mx-auto px-6 md:px-16 relative z-10">
+            
+            <div class="mb-8">
+                <span class="text-xs text-gray-300 uppercase tracking-widest mb-5 flex items-center gap-2">
+                    EMLI + ABENSA <div class="w-8 h-[1px] bg-[#CEEA4D] transform translate-y-[4px]"></div>
+                </span>
+
+                <h2 class="font-rubik font-bold text-3xl sm:text-4xl md:text-6xl relative z-20 uppercase mb-15 leading-none tracking-tight">
+                    SOMOS UNA EMPRESA 100% <br class="hidden md:block" />
+                    MEXICANA, ENFOCADA EN EL RAMO <br class="hidden md:block" />
+                    ELÉCTRICO EN GENERAL.
+                </h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12">
+                
+                <div class="lg:w-[60%] lg:pl-32">
+                    <p class="font-titillium text-xl md:text-2xl text-[#CEEA4D] font-semibold mb-7 leading-snug">
+                        Contamos con personal capacitado en <br class="hidden lg:block" />
+                        instalaciones eléctricas quienes diseñan <br class="hidden lg:block" />
+                        ingenierías de valor en tu proyecto.
+                    </p>
+
+                    <p class="font-titillium text-gray-200 text-base leading-relaxed font-light">
+                        EMLI – Abensa es la evolución de ABENSA: una estructura para <br class="hidden md:block" /> atender desde 
+                        obras industriales complejas (EMLI) hasta proyectos <br class="hidden md:block" /> ejecutivos y de instalación más puntuales (ABENSA). Un solo <br class="hidden md:block" /> 
+                        equipo, dos frentes complementarios.
+                    </p>
+                </div>
+
+                <div 
+    class="absolute top-[70%] left-[450px] sm:right-[-150px] lg:right-[-200px] transform -translate-y-1/2 z-0 pointer-events-none flex justify-center items-center opacity-30 lg:opacity-100"
+    style="-webkit-mask-image: radial-gradient(circle, black 30%, transparent 70%); mask-image: radial-gradient(circle, black 30%, transparent 70%);">
+    
+    <img 
+        src="/public/nosotros-icono.svg" 
+        alt="Logo EMLI ABENSA" 
+        class="w-[300px] md:w-[500px] lg:w-[700px] max-w-none h-auto object-contain"
+    />
+
+</div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-0">
+            <svg class="relative block w-[calc(100%+1.3px)] h-[50px] md:h-[130px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 0V120h1200z" class="fill-white"></path>
+            </svg>
+        </div>
+        
+    </section>
+
+    <div class="w-full max-w-7xl mx-auto px-6 md:px-12 relative z-30 -mt-20 md:-mt-65 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-[#CEEA4D] rounded-[5px] p-8 md:p-16 relative shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                <span class="absolute top-6 right-6 text-[#1F4C95] font-titillium text-sm">01</span>
+                <div class="w-20 h-20 mb-7 flex items-center justify-start">
+                     <img src="/public/icon-1.svg" alt="Icono Misión" class="h-20 w-auto object-contain" />
+                </div>
+                <h3 class="text-[#1F4C95] font-titillium font-bold text-3xl mb-4">Misión</h3>
+                <p class="text-[#343233] font-titillium text-lg leading-relaxed font-normal">
+                    Ser un equipo líder, innovador y responsable, que comercializa e integra soluciones eléctricas de calidad, satisfaciendo necesidades industriales con una cultura de servicio.
+                </p>
+            </div>
+            <div class="bg-[#F1F5F9] rounded-[5px] p-8 md:p-16 relative shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                <span class="absolute top-6 right-6 text-[#1F4C95] font-titillium text-sm">02</span>
+                <div class="w-20 h-20 mb-7 flex items-center justify-start">
+                     <img src="/public/icon-3.svg" alt="Icono Visión" class="h-16 w-auto object-contain" />
+                </div>
+                <h3 class="text-[#1F4C95] font-titillium font-bold text-3xl mb-4">Visión</h3>
+                <p class="text-[#343233] font-titillium text-lg leading-relaxed font-normal">
+                    Ser la referencia en proyectos eléctricos industriales del noreste, reconocidos por ingeniería clara, cumplimiento y tiempos de respuesta.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!----SECCIÓN ÁREAS CLAVE---->
+    <section class="bg-white py-12 md:py-20 w-full">
+        <div class="max-w-7xl mx-auto px-6 md:px-24">
+            <div class="flex items-center gap-2 mb-4">
+                <span class="text-xs text-gray-400 uppercase tracking-widest">EQUIPO</span>
+                <div class="w-6 h-[1px] bg-[#1F4C95] transform translate-y-[4px]"></div>
+            </div>
+            <h2 class="text-3xl md:text-6xl font-black text-[#1F4C95] uppercase mb-10 tracking-tight">Áreas Clave</h2>
+            
+            <div class="flex flex-wrap gap-[9px] mb-12">
+                <div class="h-[45px] px-5 bg-[#EDEFF3] rounded-[5px] flex items-center justify-center"><span class="text-[#343233] text-sm md:text-base font-normal">Dirección de proyecto</span></div>
+                <div class="h-[45px] px-5 bg-[#EDEFF3] rounded-[5px] flex items-center justify-center"><span class="text-[#343233] text-sm md:text-base font-normal">Ingeniería (cálculo y planos)</span></div>
+                <div class="h-[45px] px-5 bg-[#EDEFF3] rounded-[5px] flex items-center justify-center"><span class="text-[#343233] text-sm md:text-base font-normal">Media tensión / Baja tensión</span></div>
+                <div class="h-[45px] px-5 bg-[#EDEFF3] rounded-[5px] flex items-center justify-center"><span class="text-[#343233] text-sm md:text-base font-normal">Smart Systems</span></div>
+                <div class="h-[45px] px-5 bg-[#EDEFF3] rounded-[5px] flex items-center justify-center"><span class="text-[#343233] text-sm md:text-base font-normal">Iluminación</span></div>
+                <div class="h-[45px] px-5 bg-[#EDEFF3] rounded-[5px] flex items-center justify-center"><span class="text-[#343233] text-sm md:text-base font-normal">Soportería a la medida</span></div>
+                <div class="h-[45px] px-5 bg-[#EDEFF3] rounded-[5px] flex items-center justify-center"><span class="text-[#343233] text-sm md:text-base font-normal">Gestión CFE</span></div>
+                <div class="h-[45px] px-5 bg-[#EDEFF3] rounded-[5px] flex items-center justify-center"><span class="text-[#343233] text-sm md:text-base font-normal">Obra</span></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2.5fr_4fr_2.5fr_1.5fr] gap-6 lg:h-[350px]">
+                <div class="w-full h-[250px] lg:h-full bg-[#D9D9D9] overflow-hidden rounded-sm"><img src="/public/comercializadora-index.webp" alt="Área 1" class="w-full h-full object-cover object-left" /></div>
+                <div class="w-full h-[250px] lg:h-full bg-[#D9D9D9] overflow-hidden rounded-sm"><img src="/public/areas2.webp" alt="Área 2" class="w-full h-full object-cover" /></div>
+                <div class="w-full h-[250px] lg:h-full bg-[#D9D9D9] overflow-hidden rounded-sm"><img src="/public/proceso-index.jpg" alt="Área 3" class="w-full h-full object-cover" /></div>
+                <div class="w-full h-[250px] lg:h-full bg-[#D9D9D9] overflow-hidden rounded-sm"><img src="/public/area4.webp" alt="Área 4" class="w-full h-full object-cover" /></div>
+            </div>
+        </div>
+    </section>
+    <!----SECCIÓN HISTORIA---->
+    <section class="relative w-full py-24 md:py-32 overflow-hidden bg-[#343233]">
+        <div class="absolute inset-0 z-0 pointer-events-none" style="background: radial-gradient(circle at 0% 100%, rgba(206, 234, 77, 0.2) 0%, rgba(52, 50, 51, 0) 60%);"></div>
+        <div class="absolute right-0 top-0 w-full md:w-[65%] h-full z-0 pointer-events-none">
+            <img src="/public/asset3.webp" alt="Historia" class="w-full h-full object-cover grayscale opacity-30" style="mask-image: linear-gradient(to right, transparent 0%, black 60%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 80%);" />
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-24 h-full flex flex-col justify-center min-h-[400px]">
+            <div class="mb-auto pt-10"> 
+                <div class="flex items-center gap-1 mb-8">
+                    <span class="text-sm text-gray-400 uppercase tracking-widest font-titillium">NUESTRA HISTORIA</span>
+                    <div class="w-6 h-[1px] bg-[#CEEA4D] transform translate-y-[4px]"></div>
+                </div>
+                <div class="max-w-2xl">
+                    <h2 class="text-6xl md:text-9xl font-normal text-white mb-6 leading-none tracking-tight font-titillium">2019<span class="">–</span>2020</h2>
+                    <h3 class="text-xl md:text-3xl text-[#CEEA4D] font-normal leading-snug max-w-lg font-titillium">Arranque de operaciones y primeras instalaciones industriales.</h3>
+                </div>
+            </div>
+            <div class="w-full max-w-xl mx-auto h-[15px] bg-gray-600/40 rounded-full relative overflow-hidden backdrop-blur-sm mt-10 md:mt-40">
+                <div class="absolute top-0 left-0 h-full w-[30%] bg-[#CEEA4D] rounded-full shadow-[0_0_15px_#CEEA4D]"></div>
+            </div>
+        </div>
+    </section>
+    <!----SECCIÓN PRESENCIA, CLIENTES Y ALIANZAS---->
+    <style>
+        .font-titillium { font-family: 'Titillium Web', sans-serif; }
+        .font-rubik { font-family: 'Rubik', sans-serif; }
+    </style>
+
+    <section class="relative w-full overflow-hidden bg-[#1F4C95]">
+        <div class="absolute inset-0 w-full h-full z-0 pointer-events-none" style="-webkit-mask-image: linear-gradient(to right, rgb(11, 46, 75), 0, 0), 0, 0), 0, 0) 10%, transparent 100%); mask-image: linear-gradient(to right, black 10%, transparent 100%);">
+            <img src="/public/img-presencia.jpg" alt="Fondo Industrial" class="w-full h-full object-cover mix-blend-multiply opacity-50">
+        </div>
+        <div class="relative z-10 pt-20 pb-24 md:pt-32 md:pb-[34rem]">
+            <div class="max-w-7xl mx-auto px-6 md:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-left">
+                    <h2 class="text-4xl md:text-6xl font-semibold text-[#a3e635] uppercase mb-6 tracking-tight font-rubik">Presencia</h2>
+                    <p class="text-white text-xl md:text-2xl font-medium leading-tight max-w-md font-titillium">Base en Monterrey con ejecución en <br class="hidden md:block">AMM y parques industriales de N.L.</p>
+                </div>
+                <div class="flex justify-center md:justify-end">
+                    <div class="w-full max-w-xl">
+                        <img src="/public/Map.svg" class="w-full h-auto object-contain drop-shadow-2xl transform hover:scale-105 transition duration-500" alt="Mapa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!----SECCIÓN CLIENTES Y ALIANZAS---->
+    <section class="relative z-20 w-full px-4 -mt-12 md:-mt-[28rem] mb-12">
+        <div class="w-full max-w-7xl mx-auto md:ml-auto md:mr-12 bg-white shadow-2xl rounded-sm p-8 md:p-14">
+            <div class="mb-12">
+                <div class="flex items-center gap-1 mb-6">
+                    <span class="text-sm text-[#1e3a8a] uppercase tracking-widest font-titillium">CLIENTES</span>
+                    <div class="w-8 h-[1px] bg-[#1e3a8a] transform translate-y-[4px]"></div>
+                </div>
+                <div class="border border-gray-300 rounded-sm overflow-hidden w-full">
+                    <div class="grid grid-cols-2 md:grid-cols-6 divide-x divide-y md:divide-y-0 divide-gray-300">
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/GILSA.svg" alt="GILSA" class="max-h-12 w-auto object-contain"/></div>
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/REXNORD.svg" alt="REXNORD" class="max-h-20 w-auto object-contain"/></div>
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/TEREX.svg" alt="TEREX" class="max-h-12 w-auto object-contain"/></div>
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/pleus.svg" alt="PLEUS" class="max-h-20 w-auto object-contain"/></div>
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/genie.svg" alt="GENIE" class="max-h-12 w-auto object-contain"/></div>
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/AMP.svg" alt="AMP" class="max-h-28 w-auto object-contain"/></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center gap-1 mb-6">
+                    <span class="text-sm text-[#1e3a8a] uppercase tracking-widest font-titillium">ALIANZAS</span>
+                    <div class="w-8 h-[1px] bg-[#1e3a8a] transform translate-y-[4px]"></div>
+                </div>
+                <div class="border border-gray-300 rounded-sm overflow-hidden w-full md:w-1/2">
+                    <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-300">
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/MONTREAL.svg" alt="MONTREAL" class="max-h-10 w-auto object-contain"/></div>
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/GISMMA.svg" alt="CONSULTORA" class="max-h-20 w-auto object-contain"/></div>
+                        <div class="bg-white h-40 flex items-center justify-center p-4"><img src="/public/AC.svg" alt="ATTENT" class="max-h-20 w-auto object-contain"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----SECCIÓN CERTIFICACIONES---->
+    <section class="relative bg-slate-50 pt-24 md:pt-[26rem] pb-32 -mt-10 md:-mt-[20rem] z-0 overflow-hidden w-full">
+        <div class="absolute inset-y-0 left-0 w-full md:w-[55%] z-0 pointer-events-none" style="-webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%); mask-image: linear-gradient(to right, black 60%, transparent 100%);">
+            <img src="/public/img-cumplimiento.jpg" class="w-full h-full object-cover opacity-80" alt="Fondo Ingeniería">
+            <div class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-slate-50/0 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="hidden md:block"></div> 
+            
+            <div class="text-center md:text-left bg-white/90 p-8 rounded-2xl shadow-xl backdrop-blur-sm md:bg-transparent md:p-0 md:shadow-none md:backdrop-blur-none md:border-none border border-gray-100">
+                <span class="font-titillium text-xs text-gray-500 uppercase tracking-widest mb-2 block flex items-center justify-center md:justify-start gap-2">
+                    Certificados <div class="w-8 h-[1px] bg-[#1F4C95] transform translate-y-[4px]"></div>
+                </span>
+                <h2 class="font-rubik text-3xl md:text-5xl font-bold text-[#1F4C95] uppercase mb-6">Cumplimiento</h2>
+                <p class="font-titillium text-slate-700 mb-10 leading-relaxed text-lg font-medium">
+                    Trabajamos conforme a la NOM-001-SEDE para instalaciones eléctricas de utilización y coordinamos verificación UVIE cuando el proyecto lo requiere.
+                </p>
+                <div class="max-w-md mx-auto md:mx-0 bg-white border border-gray-200 rounded-xl overflow-hidden grid grid-cols-2 divide-x divide-gray-200 shadow-sm">
+                    <div class="p-6 md:p-8 flex items-center justify-center group">
+                        <span class="font-rubik font-bold text-3xl text-slate-900 tracking-tighter"><img src="/public/NOM.svg" alt="NOM"></span>
+                    </div>
+                    <div class="p-6 md:p-8 flex items-center justify-center gap-4 group">
+                        <div class="leading-none text-left">
+                            <span class="block font-rubik font-bold text-[#1F4C95] text-xl"> <img src="/public/UVIE.svg" alt="UVIE"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----SECCIÓN CONTACTO---->
+    <Contact />
+    <Footer />
+</Layout>
